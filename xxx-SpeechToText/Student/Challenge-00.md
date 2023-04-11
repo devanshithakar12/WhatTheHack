@@ -44,6 +44,10 @@ _For example, if the hack is on IoT Devices and you want the student to deploy a
 
 _Optionally, you may provide resource files such as a sample application, code snippets, or templates as learning aids for the students. These files are stored in the hack's `Student/Resources` folder. It is the coach's responsibility to package these resources into a Resources.zip file and provide it to the students at the start of the hack. You should leave the sample text below in that refers to the Resources.zip file._
 
+- [Speech to Text Container](check if we can get access for multiple students at once or if access can be shared)
+- [Dataset](https://github.com/cricketclub/gridspace-stanford-harper-valley)
+- [Install Speech SDK](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xURjBQUkk3MVdQN0RZNzFLS0FNRVU0UlFEQyQlQCN0PWcu)
+
 **\*NOTE:** Do NOT provide direct links to files or folders in the What The Hack repository from the student guide. Instead, you should refer to the Resources.zip file provided by the coach.\*
 
 **\*NOTE:** Any direct links to the What The Hack repo will be flagged for review during the review process by the WTH V-Team, including exception cases.\*
@@ -84,6 +88,9 @@ To complete this challenge successfully, you should be able to:
   - Azure IoT Hub
   - Virtual Network
   - Jumpbox VM
+
+- Verify that you have Speech to Text Container access and you can run the container after downloading it from Microsoft Container Registry (MCR)
+- Verify that you have installed the Speech SDK
 
 ## Learning Resources
 
