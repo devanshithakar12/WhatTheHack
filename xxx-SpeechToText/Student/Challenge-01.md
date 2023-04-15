@@ -17,6 +17,8 @@
 *For example:*
 
 When setting up an IoT device, it is important to understand how 'thingamajigs' work. Thingamajigs are a key part of every IoT device and ensure they are able to communicate properly with edge servers. Thingamajigs require IP addresses to be assigned to them by a server and thus must have unique MAC addresses. In this challenge, you will get hands on with a thingamajig and learn how one is configured.
+  
+We want to make sure that the data is in the right format before we use it to train the model. We have two types of data given to us: audio (.wav) and text (.json). The audio data is split into caller and agent files. We will be working with just the caller files in this hack. The human transcriptions for the caller files are nested within each json file. In this challenge, you will prepare the audio and text data for the later challenges.
 
 ## Description
 
@@ -47,6 +49,13 @@ Please configure the thingamajig with the following specifications:
 
 You can view an architectural diagram of an IoT thingamajig here: [Thingamajig.PDF](/Student/Resources/Architecture.PDF?raw=true).
 
+Please ensure you have completed the following specifications:
+  - Extract the caller human transcriptions (ground truth) from the JSON files using the Python code in the zip file provided
+  - Perform additional normalization using the Github repo in the zip file provided
+  - Create the required text file format to train the model
+  - Confirm audio format 
+  - Split data into training and testing sets. Make sure some additional data from the training set is left to use in Challenge 4
+  
 ## Success Criteria
 
 *Success criteria goes here. The success criteria should be a list of checks so a student knows they have completed the challenge successfully. These should be things that can be demonstrated to a coach.* 
@@ -61,6 +70,10 @@ To complete this challenge successfully, you should be able to:
 - Verify that the IoT device boots properly after its thingamajig is configured.
 - Verify that the thingamajig can connect to the mothership.
 - Demonstrate that the thingamajic will not connect to the IoTProxyShip
+  
+To complete this challenge successfully, you should be able to:
+  - Verify that a new folder contains all the clean and normalized ground truth files
+  - Verify the text and audio matches the format needed to train the model
 
 ## Learning Resources
 
@@ -76,6 +89,8 @@ _List of relevant links and online articles that should give the attendees the k
 - [10 Tips for Never Forgetting Your Thingamajic](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 - [IoT & Thingamajigs: Together Forever](https://www.youtube.com/watch?v=yPYZpwSpKmA)
 
+ - put resources in zip file 
+  
 ## Tips
 
 *This section is optional and may be omitted.*
@@ -84,6 +99,8 @@ _List of relevant links and online articles that should give the attendees the k
 
 - IoTDevices can fail from a broken heart if they are not together with their thingamajig. Your device will display a broken heart emoji on its screen if this happens.
 - An IoTDevice can have one or more thingamajigs attached which allow them to connect to multiple networks.
+
+ - 70/30 is a good method for splitting your data between training and testing
 
 ## Advanced Challenges (Optional)
 
